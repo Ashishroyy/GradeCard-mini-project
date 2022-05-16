@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade card</title>
+
+    <style>
+        .main-container {
+            text-align: center;
+            color: whitesmoke;
+            width: 50%;
+            margin: auto;
+            padding: 23px;
+            border: 2px solid rgb(129, 127, 127);
+            background: url('/img/computerm.jpg')
+        }
+        
+        .container {
+            padding: 50px;
+            background: rgb(180, 184, 180);
+            margin: auto;
+            display: block;
+            width: 28%;
+            border-radius: 23px;
+        }
+        
+        .form-group {
+            padding: 2px;
+            margin: auto;
+        }
+        
+        .form-element {
+            border: 2px solid lightgrey;
+            border-radius: 18px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            padding: 4px 0px;
+            margin-top: 2px;
+        }
+        
+        .form-btn {
+            border: none;
+            color: white;
+            border-radius: 9px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 7px 70px;
+            margin-top: 8px;
+            background: #1c94cc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Student Grade card</h1>
+        <div class="container">
+            <div class="form">
+                <div class="form-group">
+                    <input type="text" class="form-element" placeholder="Programming" id="prog">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-element" placeholder="Mathematics" id="math">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-element" placeholder="Computer" id="comp">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-element" placeholder="Science" id="sc">
+                </div>
+                <div>
+                    <input type="button" value="Submit" class="form-btn" onclick="Gradecal() ">
+                </div>
+            </div>
+            <p id="grade"> </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
